@@ -3,9 +3,10 @@
 ![ResultCapture](./Image/123.png)
 ## Source Code
 - 1번 문제 : 문자열 안에서 두 문자들 개수 비교
-<pre><code>package ProgrammersLevel1.solution1_compareCharCnt;
+```java
+package ProgrammersLevel1.solution1_compareCharCnt;
 
-class ProgrammersCompiler.Solution {
+class Solution {
     boolean solution(String s) {
         boolean answer = false;
 
@@ -27,15 +28,18 @@ class ProgrammersCompiler.Solution {
         return answer;
     }
 }
+```
 </code></pre>
 - 2번 문제 : 정해진 index 기준으로 문자열 정렬
-<pre><code>package ProgrammersLevel1.solution2_sortingBasedIndex;
+```java
+package ProgrammersLevel1.solution2_sortingBasedIndex;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
-class ProgrammersCompiler.Solution {
+class Solution {
     public String[] solution(String[] strings, int n) {
+
         String[] answer = {};
 
         answer = strings;
@@ -50,4 +54,5 @@ class ProgrammersCompiler.Solution {
         return answer;
     }
 }
-</code></pre>
+```
+
