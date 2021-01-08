@@ -90,14 +90,13 @@ class DoublyLinkedList {
     }
 
     public boolean remove(int index) {
-        if(accessNode(index) == null){
+        Node accessNode = accessNode(index);
+        if(accessNode == null){
             return false;
         }
-        Node curNode = accessNode(index);
-        curNode.prev.next = curNode.next;
-        curNode.next.prev = curNode.prev;
-//        Node access = accessNode(index);      // 굳이 null 처리 안해도 GC가 처리해 줄까?
-//        access = null;
+        accessNode.prev.next = accessNode.next;
+        accessNode.next.prev = accessNode.prev;
+//        accessNode = null;            // 굳이 null 처리 안해도 GC가 처리해 줄까?
         return true;
     }
 
