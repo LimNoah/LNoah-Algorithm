@@ -1,4 +1,4 @@
-package ProgrammersLevel1.solution1_compareCharCnt;
+package Homework.Day01.ProgrammersLevel1.solution1_compareCharCnt;
 
 class Solution {
     boolean solution(String s) {

@@ -4,7 +4,7 @@
 ## Source Code
 - 1번 문제 : 문자열 안에서 두 문자들 개수 비교
 ```java
-package ProgrammersLevel1.solution1_compareCharCnt;
+package Homework.Day01.ProgrammersLevel1.solution1_compareCharCnt;
 
 class Solution {
     boolean solution(String s) {
@@ -32,7 +32,7 @@ class Solution {
 </code></pre>
 - 2번 문제 : 정해진 index 기준으로 문자열 정렬
 ```java
-package ProgrammersLevel1.solution2_sortingBasedIndex;
+package Homework.Day01.ProgrammersLevel1.solution2_sortingBasedIndex;
 
 import java.util.Arrays;
 import java.util.Comparator;

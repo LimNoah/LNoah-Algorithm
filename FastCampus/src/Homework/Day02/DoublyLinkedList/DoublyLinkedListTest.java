@@ -1,4 +1,4 @@
-package Practice.DoublyLinkedList;
+package Homework.Day02.DoublyLinkedList;
 
 class Node {
     public int value;

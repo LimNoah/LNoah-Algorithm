@@ -1,4 +1,4 @@
-package ProgrammersLevel1.solution2_sortingBasedIndex;
+package Homework.Day01.ProgrammersLevel1.solution2_sortingBasedIndex;
 
 import java.util.Arrays;
 import java.util.Comparator;
