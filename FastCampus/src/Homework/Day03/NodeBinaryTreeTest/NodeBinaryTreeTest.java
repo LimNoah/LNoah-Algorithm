@@ -156,12 +156,15 @@ class NodeBinaryTreeTest {
         tree.inorder();
         tree.postorder();
 
+        System.out.println("<<<<BFS>>>>");
         System.out.println(tree.bfs(2));
         System.out.println(tree.bfs(10));
 
+        System.out.println("<<<<DFS>>>>");
         System.out.println(tree.dfs(5));
         System.out.println(tree.dfs(14));
 
+        System.out.println("<<<<DFS2>>>>");
         System.out.println(tree.dfs2(8));
         System.out.println(tree.dfs2(19));
     }
