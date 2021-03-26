@@ -8,21 +8,31 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = Integer.parseInt(br.readLine());
+        System.out.println(checkHansu(Integer.parseInt(br.readLine())));
+    }
+
+    public static int checkHansu(int N){
         int cnt = 0;
-
         if(N < 100){
-            cnt = N;
-        }
-
-        for(int i = 1; i <= N; i++){
-            String str = Integer.toString(i);
-            int diff = 0;
-            for(int j = 1; j < str.length(); j++){
-                diff = Character.getNumericValue(str.charAt(i - 1)) - Character.getNumericValue(str.charAt(i));
+            return N;
+        } else {
+            cnt = 99;
+            for(int i = 100; i <= N; i++){
+                String str = Integer.toString(i);
+                int prevDiff = Character.getNumericValue(str.charAt(0)) - Character.getNumericValue(str.charAt(1));
+                int diff;
+                for(int j = 1; j < str.length(); j++){
+                    diff = Character.getNumericValue(str.charAt(j - 1)) - Character.getNumericValue(str.charAt(j));
+                    if(prevDiff != diff){
+                        break;
+                    }
+                    prevDiff = diff;
+                    if(j == str.length() - 1){
+                        cnt++;
+                    }
+                }
             }
         }
-
-        System.out.println(cnt);
+        return cnt;
     }
 }
