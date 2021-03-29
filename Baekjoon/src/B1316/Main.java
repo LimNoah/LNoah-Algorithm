@@ -16,22 +16,26 @@ public class Main {
         for(int i = 0; i < N; i++) {
             String str = br.readLine();
             List<Character> list = new ArrayList<>();
-            list.add(str.charAt(0));
-            if(str.length() > 1){
-                for(int j = 1; j < str.length(); j++) {
-                    if(!(j == str.length() - 1) && str.charAt(j) == str.charAt(j - 1)){
-                        continue;
-                    }
-                    if(list.contains(str.charAt(j))){
-                        break;
-                    }
-                    list.add(str.charAt(j));
+            if(str.length() < 2){
+                cnt++;
+                continue;
+            }
+            char recentChar = str.charAt(0);
+            list.add(recentChar);
+            for(int j = 1; j < str.length(); j++){
+                if(recentChar == str.charAt(j)){
                     if(j == str.length() - 1){
                         cnt++;
                     }
+                    continue;
+                } else if(list.contains(str.charAt(j))){
+                    break;
                 }
-            } else {
-                cnt++;
+                if(j == str.length() - 1){
+                    cnt++;
+                }
+                list.add(str.charAt(j));
+                recentChar = str.charAt(j);
             }
         }
         System.out.println(cnt);
