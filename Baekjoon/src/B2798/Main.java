@@ -13,7 +13,14 @@ public class Main {
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
 
-        System.out.println(N);
-        System.out.println(M);
+        int[] cardNums = new int[N];
+
+        st = new StringTokenizer(br.readLine(), " ");
+
+        for(int i = 0; i < cardNums.length; i++){
+            cardNums[i] = Integer.parseInt(st.nextToken());
+        }
+
+        
     }
 }
