@@ -13,12 +13,18 @@ public class Main {
 
         int N = Integer.parseInt(br.readLine());
 
-        for(int i = 0; i < N; i++){
-            
+        for(int i = 1; i <= N; i++){
+            queue.offer(i);
         }
 
         while(queue.size() > 1){
-
+            queue.poll();
+            if(queue.size() <= 1){
+                break;
+            }
+            Integer offerValue = queue.poll();
+            queue.offer(offerValue);
         }
+        System.out.println(queue.poll());
     }
 }
