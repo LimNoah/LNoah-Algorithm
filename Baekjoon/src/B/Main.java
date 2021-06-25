@@ -10,5 +10,6 @@ public class Main {
 
         int N = Integer.parseInt(br.readLine());
 
+
     }
 }
