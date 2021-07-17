@@ -1,7 +1,6 @@
-package ct713333;
-
-public class Main {
+public class SolutionTest {
     public static void main(String[] args) {
+
 
     }
 }
