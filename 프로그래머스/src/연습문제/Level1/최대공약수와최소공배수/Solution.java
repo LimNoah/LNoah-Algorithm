@@ -11,7 +11,6 @@ public class Solution {
             big = small;
             small = remainder;
         }
-
         answer[0] = small;
         answer[1] = m * n / small;
 
