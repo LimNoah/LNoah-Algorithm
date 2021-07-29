@@ -10,7 +10,6 @@ public class Solution {
                 idx = i;
             }
         }
-
         sb.append("김서방은 ").append(idx).append("에 있다");
         return sb.toString();
     }
