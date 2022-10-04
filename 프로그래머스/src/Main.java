@@ -1,4 +1,4 @@
-import Practice.Level1.다트게임1차.Solution;
+import Practice.Level1.Java._1차_다트게임.Solution;
 
 public class Main {
     public static void main(String[] args) {
