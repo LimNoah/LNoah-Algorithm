@@ -4,10 +4,9 @@ import java.util.Arrays;
 
 class Solution {
     public String solution(String my_string) {
-        String answer = "";
+        char[] charArr = my_string.toLowerCase().toCharArray();
+        Arrays.sort(charArr);
 
-        Arrays.sort(my_string.toCharArray());
-
-        return answer;
+        return new String(charArr);
     }
 }
